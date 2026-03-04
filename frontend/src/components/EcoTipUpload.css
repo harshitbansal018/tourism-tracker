@@ -1,0 +1,50 @@
+.eco-tip-upload {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.upload-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2d6a4f;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.eco-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-height: 80px;
+  resize: none;
+  font-size: 1rem;
+}
+
+.file-input {
+  border: none;
+}
+
+.upload-btn {
+  background: #2d6a4f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #1b4332;
+}

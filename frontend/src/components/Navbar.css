@@ -1,0 +1,104 @@
+/* Base Navbar Styling */
+.navbar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Brand/title */
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* Nav links */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 1em;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #FFD700;
+  transform: scale(1.1);
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background-color: #4CAF50;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 0.8em 1em;
+    text-align: left;
+    width: 100%;
+  }
+
+  .nav-links li a {
+    font-size: 1.3em;
+    width: 100%;
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .hamburger.active {
+    transform: rotate(90deg);
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

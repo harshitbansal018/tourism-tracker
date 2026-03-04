@@ -1,0 +1,51 @@
+/* Apply background image to the entire screen */
+.auth-page-wrapper {
+  background-image: url('./images/auth-bg.jpg'); /* ✅ Use correct relative path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Form container box */
+.auth-page {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.9); /* White box with transparency */
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  color: #333; /* Dark text */
+}
+
+.auth-page input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.auth-page button {
+  padding: 0.7rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.switch-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
