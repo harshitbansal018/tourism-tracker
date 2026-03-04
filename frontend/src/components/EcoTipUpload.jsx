@@ -19,7 +19,7 @@ formData.append("file", file);
 formData.append("userId", localStorage.getItem("userId")); // 🔥 ADD THIS
 
     try {
-      const res = await fetch("http://localhost:8000/api/tips", {
+      const res = await fetch("https://tourism-tracker.onrender.com/api/tips", {
         method: "POST",
         body: formData,
       });

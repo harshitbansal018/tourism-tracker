@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"; // import useNavigate
 import "./Dashboard.css";
 
 const Dashboard = () => {
-  const navigate = useNavigate(); // initialize navigation
+  
 
   return (
     <motion.section

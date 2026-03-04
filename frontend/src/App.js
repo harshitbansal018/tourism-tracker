@@ -24,7 +24,7 @@ const App = () => {
       const userId = localStorage.getItem("userId");
       if (!userId) return;
 
-      const res = await fetch(`http://localhost:8000/api/points/${userId}`);
+      const res = await fetch(`https://tourism-tracker.onrender.com/api/points/${userId}`);
       const data = await res.json();
 
       if (res.ok) {
@@ -54,7 +54,7 @@ const App = () => {
       const userId = localStorage.getItem("userId");
       if (!userId) return;
 
-      const res = await fetch(`http://localhost:8000/api/tips/redeem/${userId}`, {
+      const res = await fetch(`https://tourism-tracker.onrender.com/api/tips/redeem/${userId}`, {
         method: "PUT",
       });
 
