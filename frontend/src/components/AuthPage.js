@@ -15,7 +15,7 @@ const AuthPage = ({ setIsAuthenticated }) => {
 
     try {
 
-      const baseURL = "https://tourism-tracker.onrender.com";
+      const baseURL = "http://localhost:8000";
 
       const url = isLogin
         ? `${baseURL}/api/login`
