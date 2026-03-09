@@ -1,11 +1,8 @@
 import React from "react";  
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom"; // import useNavigate
 import "./Dashboard.css";
 
 const Dashboard = () => {
-
-
   return (
     <motion.section
       id="dashboard"
